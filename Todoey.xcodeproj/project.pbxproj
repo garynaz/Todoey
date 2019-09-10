@@ -59,9 +59,9 @@
 				DDB2AF862321F10B0009B1C5 /* AppDelegate.swift */,
 				DDF3320C2324C4EA008E0C3F /* Views */,
 				DDF3320D2324C505008E0C3F /* Controllers */,
-				DDF3320E2324C555008E0C3F /* Supporting Files */,
 				DDB2AF922321F10C0009B1C5 /* Info.plist */,
 				DDF3320B2324C4DA008E0C3F /* Data Model */,
+				DDF3320E2324C555008E0C3F /* Supporting Files */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
