@@ -49,11 +49,11 @@ class CategoryViewController: UITableViewController {
             print("Error saving category \(error)")
         }
         
-        self.tableView.reloadData()
+        tableView.reloadData()
 
     }
     
-    func loadData(with request: NSFetchRequest<Category> = Category.fetchRequest()){
+    func loadData(){
         
         let request : NSFetchRequest<Category> = Category.fetchRequest()
         
@@ -89,12 +89,12 @@ class CategoryViewController: UITableViewController {
         
         alert.addTextField { (AlertTextField) in
             AlertTextField.placeholder = "Create new Category" //The Textbox
-            textField = AlertTextField
+            textField = AlertTextField   //we're extending the scope of the alertTextField to the scope of the addButtonPressed.
         }
         
         alert.addAction(action)
         
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil) //Presents the alert over the CategoryViewController.
         
     }
     
@@ -104,7 +104,6 @@ class CategoryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         performSegue(withIdentifier: "goToItems", sender: self)
-        
         
         }
     

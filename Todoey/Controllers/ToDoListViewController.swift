@@ -108,8 +108,7 @@ class ToDoListViewController: UITableViewController {
             print("Error saving context \(error)")
         }
         
-        
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest(), predicate: NSPredicate? = nil){
